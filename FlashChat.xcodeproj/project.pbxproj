@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8F57BF6D28B250E6001F4AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF6C28B250E6001F4AC7 /* AppDelegate.swift */; };
 		8F57BF6F28B250E6001F4AC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF6E28B250E6001F4AC7 /* SceneDelegate.swift */; };
-		8F57BF7128B250E6001F4AC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF7028B250E6001F4AC7 /* ViewController.swift */; };
 		8F57BF7428B250E6001F4AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F57BF7228B250E6001F4AC7 /* Main.storyboard */; };
 		8F57BF7628B250E9001F4AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F57BF7528B250E9001F4AC7 /* Assets.xcassets */; };
 		8F57BF7928B250E9001F4AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F57BF7728B250E9001F4AC7 /* LaunchScreen.storyboard */; };
+		8F57BF8528B251FC001F4AC7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF8128B251FC001F4AC7 /* RegisterViewController.swift */; };
+		8F57BF8628B251FC001F4AC7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF8228B251FC001F4AC7 /* WelcomeViewController.swift */; };
+		8F57BF8728B251FC001F4AC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF8328B251FC001F4AC7 /* LoginViewController.swift */; };
+		8F57BF8828B251FC001F4AC7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF8428B251FC001F4AC7 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F57BF6928B250E6001F4AC7 /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F57BF6C28B250E6001F4AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F57BF6E28B250E6001F4AC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F57BF7028B250E6001F4AC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F57BF7328B250E6001F4AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F57BF7528B250E9001F4AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F57BF7828B250E9001F4AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F57BF7A28B250E9001F4AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F57BF8128B251FC001F4AC7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8F57BF8228B251FC001F4AC7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8F57BF8328B251FC001F4AC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8F57BF8428B251FC001F4AC7 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				8F57BF6C28B250E6001F4AC7 /* AppDelegate.swift */,
 				8F57BF6E28B250E6001F4AC7 /* SceneDelegate.swift */,
-				8F57BF7028B250E6001F4AC7 /* ViewController.swift */,
-				8F57BF7228B250E6001F4AC7 /* Main.storyboard */,
+				8F57BF8A28B25231001F4AC7 /* Models */,
+				8F57BF8B28B2523B001F4AC7 /* View */,
+				8F57BF8028B251E0001F4AC7 /* Controllers */,
 				8F57BF7528B250E9001F4AC7 /* Assets.xcassets */,
 				8F57BF7728B250E9001F4AC7 /* LaunchScreen.storyboard */,
 				8F57BF7A28B250E9001F4AC7 /* Info.plist */,
 			);
 			path = FlashChat;
+			sourceTree = "<group>";
+		};
+		8F57BF8028B251E0001F4AC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F57BF8428B251FC001F4AC7 /* ChatViewController.swift */,
+				8F57BF8328B251FC001F4AC7 /* LoginViewController.swift */,
+				8F57BF8128B251FC001F4AC7 /* RegisterViewController.swift */,
+				8F57BF8228B251FC001F4AC7 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8F57BF8A28B25231001F4AC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F57BF8B28B2523B001F4AC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F57BF7228B250E6001F4AC7 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F57BF7128B250E6001F4AC7 /* ViewController.swift in Sources */,
+				8F57BF8728B251FC001F4AC7 /* LoginViewController.swift in Sources */,
+				8F57BF8628B251FC001F4AC7 /* WelcomeViewController.swift in Sources */,
+				8F57BF8828B251FC001F4AC7 /* ChatViewController.swift in Sources */,
 				8F57BF6D28B250E6001F4AC7 /* AppDelegate.swift in Sources */,
 				8F57BF6F28B250E6001F4AC7 /* SceneDelegate.swift in Sources */,
+				8F57BF8528B251FC001F4AC7 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
