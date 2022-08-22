@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A32082AA9B07FFC4E337825 /* Pods_FlashChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238556010D0CE46AD6F4587C /* Pods_FlashChat.framework */; };
+		8F06A4A128B33E62000BEECF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8F06A4A028B33E62000BEECF /* FirebaseAuth */; };
+		8F06A4A328B33E62000BEECF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8F06A4A228B33E62000BEECF /* FirebaseFirestore */; };
 		8F57BF6D28B250E6001F4AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF6C28B250E6001F4AC7 /* AppDelegate.swift */; };
 		8F57BF6F28B250E6001F4AC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF6E28B250E6001F4AC7 /* SceneDelegate.swift */; };
 		8F57BF7428B250E6001F4AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F57BF7228B250E6001F4AC7 /* Main.storyboard */; };
@@ -16,9 +19,12 @@
 		8F57BF8628B251FC001F4AC7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF8228B251FC001F4AC7 /* WelcomeViewController.swift */; };
 		8F57BF8728B251FC001F4AC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF8328B251FC001F4AC7 /* LoginViewController.swift */; };
 		8F57BF8828B251FC001F4AC7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F57BF8428B251FC001F4AC7 /* ChatViewController.swift */; };
+		8FF684A328B331FF00BE4AE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FF684A228B331FF00BE4AE7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		238556010D0CE46AD6F4587C /* Pods_FlashChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ACB858ECF24D5086A89289A /* Pods-FlashChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.release.xcconfig"; path = "Target Support Files/Pods-FlashChat/Pods-FlashChat.release.xcconfig"; sourceTree = "<group>"; };
 		8F57BF6928B250E6001F4AC7 /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F57BF6C28B250E6001F4AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F57BF6E28B250E6001F4AC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +36,8 @@
 		8F57BF8228B251FC001F4AC7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8F57BF8328B251FC001F4AC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F57BF8428B251FC001F4AC7 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8FF684A228B331FF00BE4AE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B472F1EC4996991E250DB795 /* Pods-FlashChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.debug.xcconfig"; path = "Target Support Files/Pods-FlashChat/Pods-FlashChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A32082AA9B07FFC4E337825 /* Pods_FlashChat.framework in Frameworks */,
+				8F06A4A128B33E62000BEECF /* FirebaseAuth in Frameworks */,
+				8F06A4A328B33E62000BEECF /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E2C3F94BF0E64A48212389 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B472F1EC4996991E250DB795 /* Pods-FlashChat.debug.xcconfig */,
+				4ACB858ECF24D5086A89289A /* Pods-FlashChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8F57BF6028B250E6001F4AC7 = {
 			isa = PBXGroup;
 			children = (
 				8F57BF6B28B250E6001F4AC7 /* FlashChat */,
 				8F57BF6A28B250E6001F4AC7 /* Products */,
+				18E2C3F94BF0E64A48212389 /* Pods */,
+				C338180FF16C97D3E11E2873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +92,7 @@
 				8F57BF7528B250E9001F4AC7 /* Assets.xcassets */,
 				8F57BF7728B250E9001F4AC7 /* LaunchScreen.storyboard */,
 				8F57BF7A28B250E9001F4AC7 /* Info.plist */,
+				8FF684A228B331FF00BE4AE7 /* GoogleService-Info.plist */,
 			);
 			path = FlashChat;
 			sourceTree = "<group>";
@@ -100,6 +123,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C338180FF16C97D3E11E2873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238556010D0CE46AD6F4587C /* Pods_FlashChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,15 +138,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F57BF7D28B250E9001F4AC7 /* Build configuration list for PBXNativeTarget "FlashChat" */;
 			buildPhases = (
+				315CAF0F8C5FC479986EC68B /* [CP] Check Pods Manifest.lock */,
 				8F57BF6528B250E6001F4AC7 /* Sources */,
 				8F57BF6628B250E6001F4AC7 /* Frameworks */,
 				8F57BF6728B250E6001F4AC7 /* Resources */,
+				9E27F299C623D3EE36A91DED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FlashChat;
+			packageProductDependencies = (
+				8F06A4A028B33E62000BEECF /* FirebaseAuth */,
+				8F06A4A228B33E62000BEECF /* FirebaseFirestore */,
+			);
 			productName = FlashChat;
 			productReference = 8F57BF6928B250E6001F4AC7 /* FlashChat.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 8F57BF6028B250E6001F4AC7;
+			packageReferences = (
+				8F06A49F28B33E62000BEECF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8F57BF6A28B250E6001F4AC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,12 +199,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F57BF7928B250E9001F4AC7 /* LaunchScreen.storyboard in Resources */,
+				8FF684A328B331FF00BE4AE7 /* GoogleService-Info.plist in Resources */,
 				8F57BF7628B250E9001F4AC7 /* Assets.xcassets in Resources */,
 				8F57BF7428B250E6001F4AC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		315CAF0F8C5FC479986EC68B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E27F299C623D3EE36A91DED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashChat/Pods-FlashChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashChat/Pods-FlashChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashChat/Pods-FlashChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F57BF6528B250E6001F4AC7 /* Sources */ = {
@@ -252,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -306,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -318,6 +401,7 @@
 		};
 		8F57BF7E28B250E9001F4AC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B472F1EC4996991E250DB795 /* Pods-FlashChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +415,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +431,7 @@
 		};
 		8F57BF7F28B250E9001F4AC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACB858ECF24D5086A89289A /* Pods-FlashChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -359,6 +445,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,6 +481,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F06A49F28B33E62000BEECF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F06A4A028B33E62000BEECF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F06A49F28B33E62000BEECF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8F06A4A228B33E62000BEECF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F06A49F28B33E62000BEECF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F57BF6128B250E6001F4AC7 /* Project object */;
 }
